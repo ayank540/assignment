@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Halant:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Island+Moments&display=swap');
 
 /* Reset and Base Styles */
 * {
@@ -212,8 +213,118 @@
 .main-content {
   position: relative;
   z-index: 1;
-  padding: 2rem;
   min-height: calc(100vh - 100px);
+}
+
+/* Home Section */
+.home-section {
+  padding: 4rem 2rem;
+  min-height: calc(100vh - 100px);
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.home-content-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+/* Home Left Section - Logo */
+.home-left-section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+.home-logo-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+}
+
+.home-mandala {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: auto;
+  z-index: 0;
+}
+
+.home-mandala-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.home-logo {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-logo-image {
+  max-width: 300px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Home Right Section - Text Content */
+.home-right-section {
+    margin-top: 0;
+    padding: 1rem 0;
+    text-align: center;
+    margin-right: 23%;
+}
+
+.home-title {
+  font-family: "Island Moments", cursive;
+  font-size: 3.5rem;
+  font-weight: 600;
+  color: #0F3255;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+.home-subtitle {
+  font-family: 'Halant', serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #ff6b35;
+  margin-bottom: 2.5rem;
+  letter-spacing: 0.5px;
+}
+
+
+ .home-description {
+    font-family: 'Instrument Sans', sans-serif;
+    font-size: 0.8rem;
+    color: #1a1a1a;
+    padding: 0 4rem;
+}
+
+
+.home-description p {
+  margin-bottom: 1.5rem;
+}
+
+/* Contact Section */
+.contact-section {
+  padding: 4rem 2rem;
+  min-height: calc(100vh - 100px);
+  display: flex;
+  align-items: center;
 }
 
 .content-container {
@@ -498,8 +609,41 @@
     padding: 1rem 1.5rem;
   }
 
-  .main-content {
-    padding: 1.5rem;
+  .home-section {
+    padding: 2rem 1.5rem;
+  }
+
+  .home-content-container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .home-right-section {
+    margin: auto;
+  }
+
+  .home-title {
+    font-size: 2.5rem;
+  }
+
+  .home-subtitle {
+    font-size: 1.25rem;
+  }
+
+  .home-description {
+    font-size: 1rem;
+  }
+
+  .home-logo-image {
+    max-width: 200px;
+  }
+
+  .home-mandala {
+    opacity: 0.2;
+  }
+
+  .contact-section {
+    padding: 2rem 1.5rem;
   }
 
   .content-container {
@@ -549,8 +693,28 @@
     padding: 1rem;
   }
 
-  .main-content {
-    padding: 1rem;
+  .home-section {
+    padding: 2rem 1rem;
+  }
+
+  .home-title {
+    font-size: 2rem;
+  }
+
+  .home-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .home-description {
+    font-size: 0.95rem;
+  }
+
+  .home-logo-image {
+    max-width: 150px;
+  }
+
+  .contact-section {
+    padding: 2rem 1rem;
   }
 
   .form-title {
